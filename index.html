@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        /* Form Styling */
+        .form-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 15px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #e85a5a;
+        }
+
+        /* Table Styling */
+        .menu-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        table th {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        table tr:hover {
+            background: #ffe5e5;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+</header>
+  🍽 Food Feedback System
+<div class="container">
+
+    
+    <div class="form-box">
+        <h2>Customer Feedback Form</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Food Item</label>
+            <select>
+                <option>Pizza</option>
+                <option>Burger</option>
+                <option>Pasta</option>
+                <option>Biryani</option>
+                <option>Ice Cream</option>
+            </select>
+
+            <label>Rating</label>
+            <select>
+                <option>⭐⭐⭐⭐⭐ Excellent</option>
+                <option>⭐⭐⭐⭐ Good</option>
+                <option>⭐⭐⭐ Average</option>
+                <option>⭐⭐ Poor</option>
+                <option>⭐ Very Bad</option>
+            </select>
+
+            <label>Comments</label>
+            <textarea rows="4" placeholder="Write your feedback..."></textarea>
+
+            <button class="btn">Submit Feedback</button>
+        </form>
+    </div>
+
+    
+    <div class="menu-box">
+        <h2>Food Menu</h2>
+
+        <table border="1">
+            <tr>
+                <th>Item ID</th>
+                <th>Food Name</th>
+                <th>Category</th>
+                <th>Price (₹)</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Pizza</td>
+                <td>Fast Food</td>
+                <td>250</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Burger</td>
+                <td>Fast Food</td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Pasta</td>
+                <td>Italian</td>
+                <td>200</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Biryani</td>
+                <td>Main Course</td>
+                <td>180</td>
+            </tr>
+
+            <tr>
+                <td>105</td>
+                <td>Ice Cream</td>
+                <td>Dessert</td>
+                <td>90</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+
+  
+
+</body>
+</html>
